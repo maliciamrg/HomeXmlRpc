@@ -14,8 +14,8 @@ public class ServerXmlRpc {
 	private static Logger rootLogger;
 	private static final int port = 8080;
 
-	public void testcommunication() {
-		System.out.println("testcommunication Ok");
+	public String testcommunication(String args) {
+		return "testcommunication Ok:"+args;
 	}
 
 	public Integer sum(int x, int y) {
@@ -59,7 +59,7 @@ public class ServerXmlRpc {
 			serverConfig.setContentLengthOptional(false);
 
 			webServer.start();
-
+			
 			System.out.println("Started successfully.");
 			System.out.println("Accepting requests. (Halt program to stop.)");
 		} catch (Exception exception) {

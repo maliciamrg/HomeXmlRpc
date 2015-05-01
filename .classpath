@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
+	<classpathentry excluding="**" including="com/maliciamrg/gestion/download/Visuel.java" kind="src" path="GestionnaireDownload"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="src" path="/GestionnaireDownload"/>
 	<classpathentry kind="lib" path="lib/commons-logging-1.2.jar"/>
